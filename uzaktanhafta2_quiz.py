@@ -95,13 +95,13 @@ plt.show()
 #expr : fonk tanımı
 #pprint : günlük kullanımlara yakın matematiksel yazım
 #expr.subs({prmtr1:1 , prmtr2:2}) : parametre1, parametre2ye göre yazılır
-#sqrt : kök alma
+#sqrt : kök alır
 #syp.plot : fonksiyon grafiğini çizmek için
 #function : fonksiyon demek
 #evalf : sayısal form elde eder
 #exp(x) : e üzeri x demek
 #plt.show : grafik gösterimi
-#append : listeye ekleme
+#append : listeye eleman ekler
 #symbol('y') : verilen değeri semboliğe çevirmek için
 #f.subs : değişkenlere değer atar
 
