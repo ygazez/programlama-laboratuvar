@@ -27,13 +27,24 @@ my_func #binom dağılımı fonksiyonu
 pprint(my_func)
 
 
-sym.plot(my_func.subs({p:1/4,n:3}),(x,0,3),title='binomial distribution plot for n=3')
+get_ipython().run_line_magic('matplotlib', 'inline')
+import matplotlib.pyplot as plt
 
-
-#Bir fabrikada uretilen urunlerden arızalı olanların secilmesi durumunu 1 ile arızalı olmayanlarında secilmemesini 0 ile gosterirsek,
- #arızalı gelmesi olasılıgı %25 olduguna gore 3 urun secilmesi
- #durumunda binom dagılım fonksiyonun grafiginin cizimi
- #p=0.25=1/4
- #n=3
+x_values=[] #değerleri oluşturduk
+y_values=[]
+for value in range (0,10): 
+    y=my_f.subs({p:0.25,n:10,x:value},title="Binomial Distribution") 
+    y_values.append(y) 
+    x_values.append(value)
+    print(value,y)
  
  
+ plt.plot(x_values,y_values) 
+plt.show() #grafiği çizer
+
+#Bir fabrikada uretilen urunlerden arızalı olanların secilmesi durumunu 1 ile arızalı 
+#olmayanlarında secilmemesini 0 ile gosterirsek,arızalı gelmesi olasılıgı %25 olduguna gore 10 urun secilmesi durumunda
+#binom dagılım fonksiyonun grafiginin cizimi 
+#p=0.25=1/4 
+#n=10
+
