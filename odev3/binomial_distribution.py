@@ -23,11 +23,8 @@ pprint(my_func_3)
 
 
 my_func=my_func_1*my_func_2*my_func_3
-my_func
+my_func #binom dağılımı fonksiyonunun elde edilmesi
 pprint(my_func)
-
-
-sym.plot(my_func.subs({p:1/4,n:3}),(x,0,3),title='binomial distribution plot for n=3')
 
 
  #Bir fabrikada uretilen urunlerden arızalı olanların secilmesi durumunu 1 ile arızalı olmayanlarında secilmemesini 0 ile gosterirsek,
@@ -35,5 +32,9 @@ sym.plot(my_func.subs({p:1/4,n:3}),(x,0,3),title='binomial distribution plot for
  #durumunda binom dagılım fonksiyonun grafiginin cizimi
  #p=0.25=1/4
  #n=3
+
+sym.plot(my_func.subs({p:1/4,n:3}),(x,0,3),title='binomial distribution plot for n=3')
+
+
  
  
